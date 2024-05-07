@@ -22,7 +22,7 @@ public class Test_addCart extends BaseClass{
 	public IndexPage ip;
 	public SearchResultPage sp;
 	public AddToCartPage acp;
-	
+	@Parameters("browsername")
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
