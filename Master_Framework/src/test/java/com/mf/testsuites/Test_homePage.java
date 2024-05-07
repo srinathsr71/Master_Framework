@@ -20,7 +20,7 @@ public class Test_homePage extends BaseClass {
 	public IndexPage il;
 	public LoginPage loginPage1;
 	public HomePage homepage1;
-	@Parameters("browseropen")
+	@Parameters("browsername")
 	@BeforeTest
 	public void bt() throws IOException {
 		intialization();
