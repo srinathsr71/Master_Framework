@@ -22,7 +22,7 @@ public class Test_AccountCreation extends BaseClass {
 	public IndexPage ip;
 	public LoginPage loginpage1;
 	public AccountCreationPage acp;
-	@Parameters("browser")
+	@Parameters("browsername")
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
