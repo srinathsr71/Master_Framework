@@ -41,7 +41,7 @@ public class Test_EndToEnd_feature extends BaseClass {
 		intialization();
 	}
 	
-	@Test(groups = "Regression","Smoke")
+	@Test(groups = "Smoke")
 	public void endToEndTest() throws IOException {
 		Log.startTestCase("endToEndTest");
 		ip=new IndexPage();
