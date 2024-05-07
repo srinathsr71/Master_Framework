@@ -9,13 +9,7 @@
 		  </run>
 	  </groups>
     <classes>
-      <class name="com.mf.testsuites.Test_addCart"/>
-      <class name="com.mf.testsuites.Test_IndexPage"/>
-      <class name="com.mf.testsuites.Test_LoginPage"/>
-      <class name="com.mf.testsuites.Test_OrderPage"/>
-      <class name="com.mf.testsuites.Test_SearchResultPage"/>
-      <class name="com.mf.testsuites.Test_homePage"/>
-      <class name="com.mf.testsuites.Test_AccountCreation"/>
+      
       <class name="com.mf.testsuites.Test_EndToEnd_feature"/>
     </classes>
   </test> <!-- Test -->
