@@ -20,7 +20,7 @@ public class Test_SearchResultPage extends BaseClass {
 
 	public IndexPage ip;
 	public SearchResultPage srp;
-	@Parameters("browser")
+	@Parameters("browsername")
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
