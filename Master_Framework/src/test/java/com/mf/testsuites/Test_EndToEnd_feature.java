@@ -36,12 +36,12 @@ public class Test_EndToEnd_feature extends BaseClass {
 	public OrderConfirmationPage cop;
 	
 	@Parameters("browsername")
-	@BeforeMethod
+	@BeforeMethod(groups = "Smoke")
 	public void bt() throws IOException {
 		intialization();
 	}
 	
-	@Test(groups = "Regression")
+	@Test(groups = "Regression","Smoke")
 	public void endToEndTest() throws IOException {
 		Log.startTestCase("endToEndTest");
 		ip=new IndexPage();
@@ -67,7 +67,7 @@ public class Test_EndToEnd_feature extends BaseClass {
 		Log.endTestCase("endToEndTest");
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups = "Smoke")
 	public void at() {
 		getDriver().quit();
 	}	
