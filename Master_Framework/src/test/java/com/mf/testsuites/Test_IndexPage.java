@@ -14,7 +14,7 @@ import com.mf.pageobjects.IndexPage;
 import com.mf.utility.Log;
 public class Test_IndexPage extends BaseClass {
 	public IndexPage in;
-	
+	@Parameters("browsername")
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
