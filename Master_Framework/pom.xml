@@ -53,11 +53,7 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>Master_Selenium_Java_Framework</groupId>
-			<artifactId>Master_Selenium_Java_Framework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		
     </dependencies>
 	<build>
 		<plugins>
