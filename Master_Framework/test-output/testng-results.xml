@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-07T12:01:52 IST" name="Default suite" finished-at="2024-05-07T12:02:18 IST" duration-ms="25604">
+    <groups>
+      <group name="Sanity">
+        <method signature="Test_addCart.addtocart(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mf.testsuites.Test_addCart@130c12b7]" name="addtocart" class="com.mf.testsuites.Test_addCart"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="Test_addCart.addtocart(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mf.testsuites.Test_addCart@130c12b7]" name="addtocart" class="com.mf.testsuites.Test_addCart"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2024-05-07T12:01:52 IST" name="Default test" finished-at="2024-05-07T12:02:18 IST" duration-ms="25604">
+      <class name="com.mf.testsuites.Test_addCart">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:com.mf.testsuites.Test_addCart@130c12b7]" started-at="2024-05-07T12:01:52 IST" name="beforesuite" finished-at="2024-05-07T12:01:52 IST" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method is-config="true" signature="bt()[pri:0, instance:com.mf.testsuites.Test_addCart@130c12b7]" started-at="2024-05-07T12:01:53 IST" name="bt" finished-at="2024-05-07T12:02:01 IST" duration-ms="7998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method signature="addtocart(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.mf.testsuites.Test_addCart@130c12b7]" started-at="2024-05-07T12:02:01 IST" name="addtocart" data-provider="getProduct" finished-at="2024-05-07T12:02:16 IST" duration-ms="14965" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dresses]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[S]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtocart -->
+        <test-method is-config="true" signature="at()[pri:0, instance:com.mf.testsuites.Test_addCart@130c12b7]" started-at="2024-05-07T12:02:16 IST" name="at" finished-at="2024-05-07T12:02:18 IST" duration-ms="1546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:com.mf.testsuites.Test_addCart@130c12b7]" started-at="2024-05-07T12:02:18 IST" name="aftersuite" finished-at="2024-05-07T12:02:19 IST" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- com.mf.testsuites.Test_addCart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

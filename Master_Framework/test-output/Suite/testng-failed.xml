@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.mf.utility.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test_All(failed)">
+    <classes>
+      <class name="com.mf.testsuites.Test_OrderPage">
+        <methods>
+          <include name="beforesuite"/>
+          <include name="at"/>
+          <include name="aftersuite"/>
+          <include name="bt"/>
+          <include name="verifyProductPrice"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_OrderPage -->
+      <class name="com.mf.testsuites.Test_addCart">
+        <methods>
+          <include name="beforesuite"/>
+          <include name="at"/>
+          <include name="addtocart"/>
+          <include name="aftersuite"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_addCart -->
+      <class name="com.mf.testsuites.Test_LoginPage">
+        <methods>
+          <include name="bt"/>
+          <include name="beforesuite"/>
+          <include name="at"/>
+          <include name="loginTest"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_LoginPage -->
+      <class name="com.mf.testsuites.Test_SearchResultPage">
+        <methods>
+          <include name="productAvialable"/>
+          <include name="beforesuite"/>
+          <include name="at"/>
+          <include name="bt"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_SearchResultPage -->
+      <class name="com.mf.testsuites.Test_EndToEnd_feature">
+        <methods>
+          <include name="endToEndTest"/>
+          <include name="beforesuite"/>
+          <include name="at"/>
+          <include name="aftersuite"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_EndToEnd_feature -->
+      <class name="com.mf.testsuites.Test_AccountCreation">
+        <methods>
+          <include name="bt"/>
+          <include name="at"/>
+          <include name="verifyCreateAccountPage"/>
+          <include name="beforesuite"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_AccountCreation -->
+      <class name="com.mf.testsuites.Test_homePage">
+        <methods>
+          <include name="orderHistoryTest"/>
+          <include name="at"/>
+          <include name="beforesuite"/>
+          <include name="wishListTest"/>
+          <include name="bt"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_homePage -->
+      <class name="com.mf.testsuites.Test_IndexPage">
+        <methods>
+          <include name="verityTitle"/>
+          <include name="at"/>
+          <include name="beforesuite"/>
+          <include name="bt"/>
+          <include name="verifyLogo"/>
+          <include name="aftersuite"/>
+        </methods>
+      </class> <!-- com.mf.testsuites.Test_IndexPage -->
+    </classes>
+  </test> <!-- Test_All(failed) -->
+</suite> <!-- Failed suite [Suite] -->
