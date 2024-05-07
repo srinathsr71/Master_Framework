@@ -19,7 +19,7 @@ public class Test_LoginPage  extends BaseClass{
 	public IndexPage io;
 	public LoginPage loginPage;
 	public HomePage homepage;
-	@Parameters("browser")
+	@Parameters("browsername")
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
