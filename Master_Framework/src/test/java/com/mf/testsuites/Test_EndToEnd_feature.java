@@ -35,6 +35,7 @@ public class Test_EndToEnd_feature extends BaseClass {
 	public OrderSummary op;
 	public OrderConfirmationPage cop;
 	
+	@Parameters("browsername")
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
