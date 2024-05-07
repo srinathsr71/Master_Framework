@@ -21,7 +21,7 @@ public class Test_OrderPage extends BaseClass {
 	public SearchResultPage sp;
 	public AddToCartPage acp;
 	public OrderPage os;
-	@Parameters("browser")
+	@Parameters("browsername")
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
