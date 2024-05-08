@@ -33,6 +33,7 @@ public class Test_homePage extends BaseClass {
 		il=new IndexPage();
 		loginPage1=il.clickOnSignin();
 		homepage1=loginPage1.login(fj.FileData("username"),fj.FileData("password"));
+		Thread.sleep(7000);
 		boolean result=homepage1.validateMyWishlist();
 		Assert.assertTrue(result);
 		Thread.sleep(7000);
