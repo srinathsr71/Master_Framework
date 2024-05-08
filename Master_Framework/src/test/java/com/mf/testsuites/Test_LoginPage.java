@@ -27,7 +27,7 @@ public class Test_LoginPage  extends BaseClass{
 	
 	
 	
-	@Test(groups = {"Smoke","Sanity"})
+	@Test(groups = {"Sanity"})
 	public void loginTest() throws IOException {
 		Log.startTestCase("loginTest");
 		io=new IndexPage();
