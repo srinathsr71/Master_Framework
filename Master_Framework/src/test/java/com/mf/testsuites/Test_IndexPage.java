@@ -15,13 +15,13 @@ import com.mf.utility.Log;
 public class Test_IndexPage extends BaseClass {
 	public IndexPage in;
 	@Parameters("browsername")
-	@BeforeMethod
+	@BeforeMethod(groups="Smoke")
 	public void bt() throws IOException {
 		intialization();
 		System.out.println("browser parameter value");
 	}
 
-	@Test
+	@Test(groups="Smoke")
 	public void verifyLogo() { 
 		Log.startTestCase("verifyLogo");
 		in=new IndexPage();
@@ -31,7 +31,7 @@ public class Test_IndexPage extends BaseClass {
 	}
 	
 	
-	@Test
+	@Test(groups="Smoke")
 	public void verityTitle() {
 		Log.startTestCase("verityTitle");
 		String  actTitle=in.getMyStoreTitle();
@@ -42,8 +42,7 @@ public class Test_IndexPage extends BaseClass {
 	
 	
 	
-@AfterMethod
-	
+@AfterMethod(groups="Smoke")
 	public void at() {
 	getDriver().quit();
 	}
