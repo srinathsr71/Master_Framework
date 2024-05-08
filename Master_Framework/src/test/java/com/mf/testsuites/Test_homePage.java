@@ -28,26 +28,28 @@ public class Test_homePage extends BaseClass {
 	
 	
 	@Test(groups="Smoke")
-	public void wishListTest() throws IOException {
+	public void wishListTest() throws InterruptedException  {
 		Log.startTestCase("wishListTest");
 		il=new IndexPage();
 		loginPage1=il.clickOnSignin();
 		homepage1=loginPage1.login(fj.FileData("username"),fj.FileData("password"));
 		boolean result=homepage1.validateMyWishlist();
 		Assert.assertTrue(result);
+		Thread.sleep(7000);
 		Log.endTestCase("wishListTest");
 	
 	}
 	
 	@Test(groups="Smoke")
-	public void orderHistoryTest() throws IOException {
-		//Log.startTestCase("orderHistoryTest");
+	public void orderHistoryTest() throws InterruptedException  {
+		Log.startTestCase("orderHistoryTest");
 		il=new IndexPage();
 		loginPage1=il.clickOnSignin();
 		homepage1=loginPage1.login(fj.FileData("username"),fj.FileData("password"));
 		boolean result1=homepage1.validateorderHistory();
 		Assert.assertTrue(result1);
-		//Log.endTestCase("orderHistoryTest");
+		Thread.sleep(7000);
+		Log.endTestCase("orderHistoryTest");
 	}
 	
 	
