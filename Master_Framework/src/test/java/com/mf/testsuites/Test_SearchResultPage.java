@@ -31,7 +31,7 @@ public class Test_SearchResultPage extends BaseClass {
 	public void productAvialable(String Product) throws InterruptedException  {
 		Log.startTestCase("productAvialable");
 		ip=new IndexPage();
-		srp=ip.searchProduct(Product);
+		srp=ip.searchProduct("Dresses");
 		boolean res=srp.isProductAvailable();
 		Assert.assertTrue(res);
 		Thread.sleep(7000);
