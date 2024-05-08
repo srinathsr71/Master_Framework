@@ -20,14 +20,14 @@ public class Test_LoginPage  extends BaseClass{
 	public LoginPage loginPage;
 	public HomePage homepage;
 	@Parameters("browsername")
-	@BeforeMethod
+	@BeforeMethod(groups="Smoke")
 	public void bt() throws IOException {
 		intialization();
 	}
 	
 	
 	
-	@Test(groups = {"Sanity"})
+	@Test(groups = {"Smoke","Sanity"})
 	public void loginTest() throws IOException {
 		Log.startTestCase("loginTest");
 		io=new IndexPage();
@@ -45,7 +45,7 @@ public class Test_LoginPage  extends BaseClass{
 	
 	
 	
-	@AfterMethod
+	@AfterMethod(groups="Smoke")
 	public void at() {
 		getDriver().quit();
 	}	
