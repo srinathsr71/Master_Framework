@@ -27,7 +27,7 @@ public class Test_homePage extends BaseClass {
 	}
 	
 	
-	@Test(groups = "Smoke")
+	@Test
 	public void wishListTest() throws IOException {
 		Log.startTestCase("wishListTest");
 		il=new IndexPage();
@@ -39,7 +39,7 @@ public class Test_homePage extends BaseClass {
 	
 	}
 	
-	@Test(groups = "Smoke")
+	@Test
 	public void orderHistoryTest() throws IOException {
 		//Log.startTestCase("orderHistoryTest");
 		il=new IndexPage();
