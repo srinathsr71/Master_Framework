@@ -21,13 +21,13 @@ public class Test_homePage extends BaseClass {
 	public LoginPage loginPage1;
 	public HomePage homepage1;
 	@Parameters("browsername")
-	@BeforeTest
+	@BeforeMethod(groups="Smoke")
 	public void bt() throws IOException {
 		intialization();
 	}
 	
 	
-	@Test
+	@Test(groups="Smoke")
 	public void wishListTest() throws IOException {
 		Log.startTestCase("wishListTest");
 		il=new IndexPage();
@@ -39,7 +39,7 @@ public class Test_homePage extends BaseClass {
 	
 	}
 	
-	@Test
+	@Test(groups="Smoke")
 	public void orderHistoryTest() throws IOException {
 		//Log.startTestCase("orderHistoryTest");
 		il=new IndexPage();
@@ -51,7 +51,7 @@ public class Test_homePage extends BaseClass {
 	}
 	
 	
-	@AfterTest
+	@AfterMethod(groups="Smoke")
 	public void at() {
 		getDriver().quit();
 	}	
