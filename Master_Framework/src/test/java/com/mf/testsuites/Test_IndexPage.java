@@ -22,7 +22,7 @@ public class Test_IndexPage extends BaseClass {
 	}
 
 	@Test(groups="Smoke")
-	public void verifyLogo() { 
+	public void verifyLogo() throws InterruptedException  { 
 		Log.startTestCase("verifyLogo");
 		in=new IndexPage();
 		boolean result=in.validateLogo();
@@ -33,7 +33,7 @@ public class Test_IndexPage extends BaseClass {
 	
 	
 	@Test(groups="Smoke")
-	public void verityTitle() {
+	public void verityTitle() throws InterruptedException  {
 		Log.startTestCase("verityTitle");
 		String  actTitle=in.getMyStoreTitle();
 		System.out.println(actTitle);
