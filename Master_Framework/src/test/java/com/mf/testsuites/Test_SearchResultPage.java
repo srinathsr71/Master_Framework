@@ -21,13 +21,13 @@ public class Test_SearchResultPage extends BaseClass {
 	public IndexPage ip;
 	public SearchResultPage srp;
 	@Parameters("browsername")
-	@BeforeMethod
+	@BeforeMethod(groups="Smoke")
 	public void bt() throws IOException {
 		intialization();
 	}
 	
 	
-	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class)
+	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class,groups="Smoke")
 	public void productAvialable(String Product) {
 		Log.startTestCase("productAvialable");
 		ip=new IndexPage();
@@ -39,7 +39,7 @@ public class Test_SearchResultPage extends BaseClass {
 	
 	
 	
-	@AfterMethod
+	@AfterMethod(groups="Smoke")
 	public void at() {
 		getDriver().quit();
 	}	
