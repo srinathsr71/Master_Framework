@@ -27,6 +27,7 @@ public class Test_IndexPage extends BaseClass {
 		in=new IndexPage();
 		boolean result=in.validateLogo();
 		Assert.assertTrue(result);
+		Thread.sleep(7000);
 		Log.endTestCase("verifyLogo");
 	}
 	
@@ -37,6 +38,7 @@ public class Test_IndexPage extends BaseClass {
 		String  actTitle=in.getMyStoreTitle();
 		System.out.println(actTitle);
 		Assert.assertEquals(actTitle,"My Shop");
+		Thread.sleep(7000);
 		Log.endTestCase("verifyTitle");
 	}
 	
