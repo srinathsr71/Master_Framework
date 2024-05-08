@@ -35,6 +35,7 @@ public class Test_IndexPage extends BaseClass {
 	public void verityTitle() {
 		Log.startTestCase("verityTitle");
 		String  actTitle=in.getMyStoreTitle();
+		System.out.println(actTitle);
 		Assert.assertEquals(actTitle,"My Shop");
 		Log.endTestCase("verifyTitle");
 	}
