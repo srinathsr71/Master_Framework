@@ -28,7 +28,7 @@ public class Test_homePage extends BaseClass {
 	
 	
 	@Test(groups="Smoke")
-	public void wishListTest() throws InterruptedException  {
+	public void wishListTest() throws IOException, InterruptedException  {
 		Log.startTestCase("wishListTest");
 		il=new IndexPage();
 		loginPage1=il.clickOnSignin();
@@ -41,7 +41,7 @@ public class Test_homePage extends BaseClass {
 	}
 	
 	@Test(groups="Smoke")
-	public void orderHistoryTest() throws InterruptedException  {
+	public void orderHistoryTest() throws IOException, InterruptedException  {
 		Log.startTestCase("orderHistoryTest");
 		il=new IndexPage();
 		loginPage1=il.clickOnSignin();
