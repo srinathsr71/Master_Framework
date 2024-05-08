@@ -28,7 +28,7 @@ public class Test_LoginPage  extends BaseClass{
 	
 	
 	@Test(groups = {"Smoke","Sanity"})
-	public void loginTest() throws IOException {
+	public void loginTest() throws IOException,InterruptedException {
 		Log.startTestCase("loginTest");
 		io=new IndexPage();
 		Log.info("user is going to click on SignIn");
@@ -38,6 +38,7 @@ public class Test_LoginPage  extends BaseClass{
 		//homepage=loginPage.login(Username,Password);
 		Log.info("Verifying if user is able to login");
 		String actulurl=homepage.getCurrURL();
+		Thread.sleep(7000);
 		//Assert.assertEquals(actulurl,"http://www.automationpractice.pl/index.php?controller=authentication");
 		Log.info("Login is Sucess");
 	    Log.endTestCase("loginTest");
