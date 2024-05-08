@@ -27,7 +27,7 @@ public class Test_SearchResultPage extends BaseClass {
 	}
 	
 	
-	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class,groups = "Smoke")
+	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class)
 	public void productAvialable(String Product) {
 		Log.startTestCase("productAvialable");
 		ip=new IndexPage();
