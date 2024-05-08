@@ -27,7 +27,7 @@ public class Test_SearchResultPage extends BaseClass {
 	}
 	
 	
-	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class,groups="Smoke")
+	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class,groups = "Smoke")
 	public void productAvialable(String Product) throws InterruptedException  {
 		Log.startTestCase("productAvialable");
 		ip=new IndexPage();
