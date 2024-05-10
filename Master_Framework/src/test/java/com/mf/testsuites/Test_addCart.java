@@ -29,11 +29,11 @@ public class Test_addCart extends BaseClass{
 	}
 
 	
-	@Test(dataProvider = "getProduct",dataProviderClass = DataProviders.class,groups = {"Sanity","Regression"})
+	@Test
 	public void addtocart(String Product,String qty,String Size) {
 		Log.startTestCase("addtocart");
 		ip=new IndexPage();
-		sp=ip.searchProduct(Product);
+		sp=ip.searchProduct("Dresses");
 		acp=sp.clickonProduct();
 		//acp.closeIcon();
 		acp.enterPopup();
