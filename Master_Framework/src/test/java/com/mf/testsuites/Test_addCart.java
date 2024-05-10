@@ -30,7 +30,7 @@ public class Test_addCart extends BaseClass{
 
 	
 	@Test
-	public void addtocart(String Product,String qty,String Size) {
+	public void addtocart() {
 		Log.startTestCase("addtocart");
 		ip=new IndexPage();
 		sp=ip.searchProduct("Dresses");
@@ -38,9 +38,9 @@ public class Test_addCart extends BaseClass{
 		//acp.closeIcon();
 		acp.enterPopup();
 //		acp.getProductText();
-		acp.selectsize(Size);
+		acp.selectsize("S");
 		acp.product_color();
-		acp.enterQuantity(qty);
+		acp.enterQuantity("2");
 		acp.ClickonAddToCart();
 		boolean gt=acp.validateAddtocart();
 		Assert.assertTrue(gt);
