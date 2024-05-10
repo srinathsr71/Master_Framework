@@ -22,7 +22,7 @@ public class Test_addCart extends BaseClass{
 	public IndexPage ip;
 	public SearchResultPage sp;
 	public AddToCartPage acp;
-	@Parameters("browsername")
+	
 	@BeforeMethod
 	public void bt() throws IOException {
 		intialization();
@@ -30,11 +30,10 @@ public class Test_addCart extends BaseClass{
 
 	
 	@Test(dataProvider = "getProduct",dataProviderClass = DataProviders.class,groups = {"Sanity","Regression"})
-	public void addtocart(String Product,String qty,String Size) throws InterruptedException {
+	public void addtocart(String Product,String qty,String Size) {
 		Log.startTestCase("addtocart");
 		ip=new IndexPage();
 		sp=ip.searchProduct(Product);
-		Thread.sleep(5000);
 		acp=sp.clickonProduct();
 		//acp.closeIcon();
 		acp.enterPopup();
@@ -52,5 +51,6 @@ public class Test_addCart extends BaseClass{
 	public void at() {
 		getDriver().quit();
 	}			
+	
 	
 }
