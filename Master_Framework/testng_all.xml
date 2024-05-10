@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="com.mf.utility.ListenerClass"></listener>
 	</listeners>
-  <test thread-count="5" name="Test_All">
+  <test name="Test_All">
     <classes>
 	     <class name="com.mf.testsuites.Test_AccountCreation"/>
       <class name="com.mf.testsuites.Test_SearchResultPage"/> 
