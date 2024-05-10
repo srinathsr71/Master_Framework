@@ -20,28 +20,26 @@ public class Test_SearchResultPage extends BaseClass {
 
 	public IndexPage ip;
 	public SearchResultPage srp;
-	@Parameters("browsername")
-	@BeforeMethod(groups="Smoke")
-	public void bt() throws IOException {
+	@Parameters("browser")
+	@BeforeMethod
+	public void bt() throws IOException, InterruptedException {
 		intialization();
 	}
 	
 	
-	@Test
-	public void productAvialable(String Product) throws InterruptedException  {
+	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class)
+	public void productAvialable(String Product) {
 		Log.startTestCase("productAvialable");
 		ip=new IndexPage();
-		srp=ip.searchProduct("Dresses");
-		Thread.sleep(7000);
+		srp=ip.searchProduct(Product);
 		boolean res=srp.isProductAvailable();
-		Assert.assertTrue(res);
-		Thread.sleep(7000);
+		Assert.assertTrue(res);		
 		Log.endTestCase("productAvialable");
 	}
 	
 	
 	
-	@AfterMethod(groups="Smoke")
+	@AfterMethod
 	public void at() {
 		getDriver().quit();
 	}	
