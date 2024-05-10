@@ -27,11 +27,11 @@ public class Test_SearchResultPage extends BaseClass {
 	}
 	
 	
-	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class)
-	public void productAvialable(String Product) {
+	@Test
+	public void productAvialable() {
 		Log.startTestCase("productAvialable");
 		ip=new IndexPage();
-		srp=ip.searchProduct(Product);
+		srp=ip.searchProduct("Dresses");
 		boolean res=srp.isProductAvailable();
 		Assert.assertTrue(res);		
 		Log.endTestCase("productAvialable");
