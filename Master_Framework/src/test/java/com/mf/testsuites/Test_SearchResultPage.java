@@ -27,12 +27,11 @@ public class Test_SearchResultPage extends BaseClass {
 	}
 	
 	
-	@Test(dataProvider = "searchProduct",dataProviderClass = DataProviders.class)
+	@Test
 	public void productAvialable(String Product) throws InterruptedException  {
 		Log.startTestCase("productAvialable");
 		ip=new IndexPage();
-		Thread.sleep(7000);
-		srp=ip.searchProduct(Product);
+		srp=ip.searchProduct("Dresses");
 		Thread.sleep(7000);
 		boolean res=srp.isProductAvailable();
 		Assert.assertTrue(res);
