@@ -30,10 +30,11 @@ public class Test_addCart extends BaseClass{
 
 	
 	@Test(dataProvider = "getProduct",dataProviderClass = DataProviders.class,groups = {"Sanity","Regression"})
-	public void addtocart(String Product,String qty,String Size) {
+	public void addtocart(String Product,String qty,String Size) throws InterruptedException {
 		Log.startTestCase("addtocart");
 		ip=new IndexPage();
 		sp=ip.searchProduct(Product);
+		Thread.sleep(5000);
 		acp=sp.clickonProduct();
 		//acp.closeIcon();
 		acp.enterPopup();
