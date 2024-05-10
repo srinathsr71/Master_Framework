@@ -29,12 +29,12 @@ public class Test_AccountCreation extends BaseClass {
 		
 	}
 	
-	@Test(dataProvider = "email",dataProviderClass = DataProviders.class,groups = "Sanity")
-	public void verifyCreateAccountPage(String Email) throws IOException {
+	@Test
+	public void verifyCreateAccountPage() throws IOException {
 		Log.startTestCase("verifyCreateAccountPage");
 		ip=new IndexPage();
 		loginpage1=ip.clickOnSignin();
-		acp=loginpage1.createNewAccount(Email);
+		acp=loginpage1.createNewAccount("shu@gmail.com");
 		boolean re=acp.validateformTitle();
 		Assert.assertTrue(re);
 		Log.endTestCase("verifyCreateAccountPage");
