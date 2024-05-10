@@ -30,11 +30,13 @@ public class Test_AccountCreation extends BaseClass {
 	}
 	
 	@Test(dataProvider = "email",dataProviderClass = DataProviders.class,groups = "Sanity")
-	public void verifyCreateAccountPage(String Email) throws IOException {
+	public void verifyCreateAccountPage(String Email) throws IOException,InterruptedException {
 		Log.startTestCase("verifyCreateAccountPage");
 		ip=new IndexPage();
 		loginpage1=ip.clickOnSignin();
+		Thread.sleep(5000);
 		acp=loginpage1.createNewAccount(Email);
+		Thread.sleep(5000);
 		boolean re=acp.validateformTitle();
 		Assert.assertTrue(re);
 		Log.endTestCase("verifyCreateAccountPage");
